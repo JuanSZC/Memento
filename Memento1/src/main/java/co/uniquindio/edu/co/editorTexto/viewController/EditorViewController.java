@@ -1,13 +1,22 @@
-package co.uniquindio.edu.co.memento1.viewController;
+package co.uniquindio.edu.co.editorTexto.viewController;
 
-import co.uniquindio.edu.co.memento1.App;
-import co.uniquindio.edu.co.memento1.controller.EditorController;
-import co.uniquindio.edu.co.memento1.model.Caretaker;
-import co.uniquindio.edu.co.memento1.model.Memento;
+import co.uniquindio.edu.co.editorTexto.App;
+import co.uniquindio.edu.co.editorTexto.controller.EditorController;
+import co.uniquindio.edu.co.editorTexto.model.Caretaker;
+import co.uniquindio.edu.co.editorTexto.model.Memento;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
+/**
+ * La clase EditorViewController maneja las interacciones de la interfaz de usuario
+ * para el editor de texto. Gestiona el componente de área de texto y coordina
+ * con el EditorController para implementar la funcionalidad de deshacer usando el
+ * patrón Memento.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class EditorViewController {
     private EditorController editorController = new EditorController();
     private App app;

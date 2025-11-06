@@ -1,9 +1,17 @@
-package co.uniquindio.edu.co.memento2.model;
+package co.uniquindio.edu.co.editorPersonaje.model;
 
 import java.util.ArrayList;
 import java.util.Stack;
 import java.util.List;
 
+/**
+ * La clase Caretaker gestiona el historial de estados del personaje.
+ * Mantiene una pila de objetos Memento, permitiendo operaciones de deshacer
+ * y mantiene un historial de cambios que pueden ser consultados.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class Caretaker {
     private final Stack<Memento> listMementos = new Stack<>();
 

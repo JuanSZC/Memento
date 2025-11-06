@@ -1,9 +1,9 @@
-package co.uniquindio.edu.co.memento2.viewController;
+package co.uniquindio.edu.co.editorPersonaje.viewController;
 
-import co.uniquindio.edu.co.memento2.App;
-import co.uniquindio.edu.co.memento2.controller.EditorController;
-import co.uniquindio.edu.co.memento2.model.Caretaker;
-import co.uniquindio.edu.co.memento2.model.Memento;
+import co.uniquindio.edu.co.editorPersonaje.App;
+import co.uniquindio.edu.co.editorPersonaje.controller.EditorController;
+import co.uniquindio.edu.co.editorPersonaje.model.Caretaker;
+import co.uniquindio.edu.co.editorPersonaje.model.Memento;
 
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
@@ -13,6 +13,15 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.collections.FXCollections;
 
+/**
+ * La clase EditorViewController maneja las interacciones de la interfaz de usuario
+ * para el editor de personajes. Gestiona los componentes visuales como el selector
+ * de color, niveles de poder y salud, y coordina con el EditorController para
+ * implementar la funcionalidad de deshacer usando el patrón Memento.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class EditorViewController {
     private final EditorController editorController = new EditorController();
     private final Caretaker caretaker = new Caretaker();

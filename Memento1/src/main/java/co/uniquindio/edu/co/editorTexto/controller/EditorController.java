@@ -1,8 +1,16 @@
-package co.uniquindio.edu.co.memento1.controller;
+package co.uniquindio.edu.co.editorTexto.controller;
 
-import co.uniquindio.edu.co.memento1.model.Memento;
-import co.uniquindio.edu.co.memento1.model.Originator;
+import co.uniquindio.edu.co.editorTexto.model.Memento;
+import co.uniquindio.edu.co.editorTexto.model.Originator;
 
+/**
+ * La clase EditorController actúa como puente entre la vista y el modelo.
+ * Delega las operaciones de edición de texto al Originator y gestiona
+ * la creación y restauración de objetos Memento.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class EditorController {
     Originator originator = new Originator();
 

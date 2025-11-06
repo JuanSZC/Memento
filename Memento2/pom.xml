@@ -5,11 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>co.uniquindio.edu.co</groupId>
-    <artifactId>Memento1</artifactId>
+    <artifactId>EditorPersonaje</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Memento1</name>
-
-    <properties>
+    <n>EditorPersonaje</n>    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.12.1</junit.version>
     </properties>

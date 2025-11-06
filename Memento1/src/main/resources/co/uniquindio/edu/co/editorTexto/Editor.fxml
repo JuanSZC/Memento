@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.edu.co.memento1.viewController.EditorViewController">
+<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.edu.co.editorTexto.viewController.EditorViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93e3fa" height="121.0" stroke="#93e3fa" strokeType="INSIDE" styleClass="label" width="900.0" />
       <Text layoutX="182.0" layoutY="80.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor de Texto (Memento)">

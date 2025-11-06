@@ -1,9 +1,17 @@
-package co.uniquindio.edu.co.memento2.controller;
+package co.uniquindio.edu.co.editorPersonaje.controller;
 
-import co.uniquindio.edu.co.memento2.model.Memento;
-import co.uniquindio.edu.co.memento2.model.Originator;
+import co.uniquindio.edu.co.editorPersonaje.model.Memento;
+import co.uniquindio.edu.co.editorPersonaje.model.Originator;
 import javafx.scene.paint.Color;
 
+/**
+ * La clase EditorController actúa como intermediario entre la vista y el modelo.
+ * Gestiona las operaciones de modificación del personaje, delegando las acciones
+ * al Originator y coordinando la creación y restauración de estados mediante Mementos.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class EditorController {
     private final Originator originator = new Originator();
 

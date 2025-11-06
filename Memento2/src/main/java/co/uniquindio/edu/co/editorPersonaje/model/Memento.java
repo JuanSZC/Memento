@@ -1,7 +1,15 @@
-package co.uniquindio.edu.co.memento2.model;
+package co.uniquindio.edu.co.editorPersonaje.model;
 
 import javafx.scene.paint.Color;
 
+/**
+ * La clase Memento representa una instantánea del estado del personaje.
+ * Almacena el color de piel, nivel de poder y puntos de salud en un
+ * momento específico, permitiendo restaurar estos estados posteriormente.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class Memento {
     private final Color skinColor;
     private final int powerLevel;

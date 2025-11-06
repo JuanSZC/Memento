@@ -1,7 +1,6 @@
-package co.uniquindio.edu.co.memento2;
+package co.uniquindio.edu.co.editorPersonaje;
 
-import co.uniquindio.edu.co.memento2.viewController.EditorViewController;
-import co.uniquindio.edu.co.memento2.viewController.EditorViewController;
+import co.uniquindio.edu.co.editorPersonaje.viewController.EditorViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +9,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * La clase principal de la aplicación que inicializa y lanza el editor de personajes.
+ * Esta clase extiende JavaFX Application y configura el escenario principal
+ * con la interfaz del editor de personajes.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class App extends Application {
     private Stage stage;
 
@@ -27,7 +34,7 @@ public class App extends Application {
     public void openEditor() {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/uniquindio/edu/co/memento2/editor.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/uniquindio/edu/co/editorPersonaje/editor.fxml"));
             AnchorPane rootLayout = loader.load();
 
             EditorViewController editor = loader.getController();

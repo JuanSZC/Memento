@@ -1,5 +1,13 @@
-package co.uniquindio.edu.co.memento1.model;
+package co.uniquindio.edu.co.editorTexto.model;
 
+/**
+ * La clase Originator es responsable de crear y gestionar el estado del editor.
+ * Puede crear instantáneas de su estado actual como objetos Memento y
+ * restaurar su estado a partir de Mementos existentes.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class Originator {
 
     private String Texto;

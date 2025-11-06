@@ -1,7 +1,16 @@
-package co.uniquindio.edu.co.memento2.model;
+package co.uniquindio.edu.co.editorPersonaje.model;
 
 import javafx.scene.paint.Color;
 
+/**
+ * La clase Originator gestiona el estado actual del personaje.
+ * Mantiene el color de piel, nivel de poder y puntos de salud,
+ * permitiendo crear instantáneas del estado actual y restaurar
+ * estados previos mediante objetos Memento.
+ * 
+ * @author JuanSZC
+ * @version 1.0
+ */
 public class Originator {
     private Color skinColor;
     private int powerLevel;
