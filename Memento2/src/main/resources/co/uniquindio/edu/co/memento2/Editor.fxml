@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.edu.co.memento2.viewController.EditorViewController">
+   <children>
+      <Text layoutX="182.0" layoutY="80.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Creador de Personajes">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      
+      <!-- Panel izquierdo para el personaje -->
+      <VBox layoutX="50.0" layoutY="120.0" spacing="20.0" prefWidth="300.0">
+         <!-- Vista previa del personaje -->
+         <Rectangle fx:id="characterBody" width="100" height="150" stroke="BLACK" strokeWidth="1"/>
+         
+         <!-- Controles del personaje -->
+         <VBox spacing="15">
+            <Label text="Color del Personaje"/>
+            <ColorPicker fx:id="skinColorPicker"/>
+            
+            <Label text="Nivel de Poder"/>
+            <ComboBox fx:id="powerComboBox" prefWidth="200.0"/>
+            
+            <Label text="Puntos de Vida"/>
+            <ComboBox fx:id="healthComboBox" prefWidth="200.0"/>
+            
+            <Button mnemonicParsing="false" onAction="#saveCharacter" prefWidth="200.0" 
+                    styleClass="button-primary" stylesheets="@../../../../../Styles/styleButton.css" 
+                    text="Guardar" />
+            <Button mnemonicParsing="false" onAction="#undo" prefWidth="200.0" 
+                    styleClass="button-primary" stylesheets="@../../../../../Styles/styleButton.css" 
+                    text="Deshacer" />
+         </VBox>
+      </VBox>
+      
+      <!-- Panel derecho para historial -->
+      <VBox layoutX="400.0" layoutY="120.0" spacing="10.0" prefWidth="450.0">
+         <Label text="Historial de Personajes">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <ListView fx:id="characterHistory" prefHeight="500.0"/>
+      </VBox>
+   </children>
+</AnchorPane>
